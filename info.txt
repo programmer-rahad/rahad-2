@@ -1,0 +1,1 @@
+fade slide, javascript navigation, scss

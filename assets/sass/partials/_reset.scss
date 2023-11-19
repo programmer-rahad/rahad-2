@@ -1,0 +1,115 @@
+/* Reset */
+// @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+// @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $primary-font-size;
+  line-height: 1.7;
+  font-family: $primary-font;
+}
+body {
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+ul {
+  list-style: none;
+}
+
+// a:hover,
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+input {
+  outline: 0;
+  border: none;
+  &[type="submit"] {
+    cursor: pointer;
+  }
+}
+textarea {
+  outline: none;
+}
+button {
+  // outline: none;
+  // border: 1px solid #ddd;
+  // font-size: 1rem;
+  // cursor: pointer;
+}
+
+// Chrome, Safari, Edge, Opera
+// input::-webkit-outer-spin-button,
+// input::-webkit-inner-spin-button {
+//   -webkit-appearance: none;
+//   margin: 0;
+// }
+// Firefox
+// input[type=number] {
+//   -moz-appearance: textfield;
+// }
+
+// p {
+//     color: #ffffff;
+// font-size: $primary-font-size;
+// letter-spacing: .5px;
+// line-height: 26px;
+// margin-top: 0;
+// margin-bottom: 15px;
+// }
+
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+// margin-top: 0;
+// margin-bottom: 20px;
+// }
+// .container {
+//   padding-left: 15px;
+//   padding-right: 15px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   @media(min-width: 768px) {
+//     width: 720px;
+//   }
+//   @media(min-width: 992px) {
+//     width: 970px;
+//   }
+//   @media(min-width: 1200px) {
+//     width: 1170px;
+//   }
+// }
+
+// .container {
+//   margin: 20px auto;
+// }
+
+// .box {
+//   width: 600px;
+//   margin: 140px auto;
+//   background: #fff;
+// display: table;
+// }
+// .box-row {
+//   display: table-row;
+// }
+// .box-cell {
+//   display: table-cell;
+// }

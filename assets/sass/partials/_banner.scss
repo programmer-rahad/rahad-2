@@ -1,0 +1,75 @@
+section#banner-section.slider-items {
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  @include lg-min {
+    height: calc(100vh - 103px);
+  }
+  @include tab-max {
+    height: auto;
+  }
+  .slider-item {
+    vertical-align: middle;
+    display: none;
+    &:nth-child(3) {
+      display: table-cell;
+    }
+
+    @include md-max {
+      padding: 60px 0;
+    }
+    h2 {
+      line-height: 1.4;
+      @include md-min {
+        font-size: 45px;
+        line-height: 1.2;
+      }
+    }
+    p {
+      margin: 10px 0px 20px 0;
+      line-height: 1.4;
+      letter-spacing: 0.5px;
+      @include md-min {
+        font-size: 20px;
+      }
+    }
+    a {
+      border: 1px solid;
+      color: $white;
+      padding: 7px 20px;
+      &:hover {
+        border-color: $orange;
+      }
+      @include tab-max {
+        font-size: 14px;
+      }
+    }
+  }
+  .arrow-buttons {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    @include rwd-max(384) {
+      left: auto;
+      right: 20px;
+      transform: none;
+    }
+    i {
+      border: 1px solid;
+      color: #fff;
+      padding: 5px 19px;
+      font-size: 25px;
+      margin: 0 3px;
+      cursor: pointer;
+      &:hover {
+        border-color: $orange;
+      }
+      &[class*="left"] {
+      }
+      &[class*="right"] {
+      }
+    }
+  }
+}
